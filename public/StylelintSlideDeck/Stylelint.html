@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Stylelint - Pete Levine</title>
+
+		<meta name="description" content="Stylelint Slide Deck">
+		<meta name="author" content="Pete Levine">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/beige.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+		
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>Stylelint</h1>
+					<h3>CSS Linting</h3>
+					<p>
+						<small>By <a href="http://blog.petelevi.com">Pete Levine</a> / <a href="http://twitter.com/petelevina">@petelevinea</a></small>
+					</p>
+					<aside class="notes">
+						<ul>
+							<li>Why?</li>
+							<li>Linting is tool that analyzes code and reports errors</li>
+							<li>Unopinionated</li>
+							<li>Available as CLI, Extension, build tool(gulp webpack), PostCSS Plugin</li>
+						</ul>
+					</aside>
+				</section>
+				<section>
+					<h2>PostCSS</h2>
+					<p>
+						<img src="images/postCSS_scheme.png" alt="postcss" title="postcss" />
+					</p>
+					<aside class="notes">
+						<ul>
+							<li>What Powers Stylelint</li>
+							<li>To me, a highly extensible CSS Compiler</li>
+						</ul>
+					</aside>
+				</section>
+				<section>
+					<h2>Demo</h2>
+					<aside class="notes">
+						<ul>
+							<li>.stylelintrc or stylelint.config or package.json file</li>
+							<li>Go over errors only, over 150 rules
+								<ul>
+									<li>color-no-invalid-hex</li>
+									<li>declaration-block-no-shorthand-property-overrides</li>
+									<li>declaration-block-no-duplicate-properties</li>
+									<li>declaration-no-important</li>
+								</ul>
+							</li>
+							<li>There are many coding style rules, like indentation</li>
+						</ul>
+					</aside>
+				</section>
+				<section>
+					<h2>Helpful Links</h2>
+					<p>
+						<ul>
+							<li>SlideDeck: <a href="http://blog.petelevi.com/slidedecks">http://blog.petelevi.com/slidedecks</a></li>
+							<li>Facebook: Improving CSS Quality
+								<ul><li><a href="https://code.facebook.com/posts/879890885467584">https://code.facebook.com/posts/879890885467584</a></li></ul>
+							</li>
+							<li><a href="https://github.com/postcss/postcss">https://github.com/postcss/postcss</a></li>
+							<li><a href="http://stylelint.io/">http://stylelint.io/</a></li>
+							<li>Specificity
+								<ul>
+									<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity">https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity</a></li>
+									<li><a href="https://www.w3.org/TR/css3-selectors/#specificity">https://www.w3.org/TR/css3-selectors/#specificity</a></li>
+								</ul>
+							</li>
+						</ul>
+					</p>
+				</section>
+				
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
